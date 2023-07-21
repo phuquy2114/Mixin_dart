@@ -1,6 +1,6 @@
 import 'dart:math';
 
-class Position {
+mixin class Position {
   late int x;
   late int y;
 

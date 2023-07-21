@@ -1,19 +1,21 @@
-
 import 'perimeter_view.dart';
 import 'postion.dart';
+import 'view/login_page.dart';
 
 void main() {
-  var origin = new Position()
-    ..x = 0
-    ..y = 0;
+  var position = Position();
+  position.x = 20;
+  position.y = 100;
 
-  var p = new PerimeterView()
-    ..x = 5
-    ..y = 5
-    ..length = 10
-    ..breadth = 11;
+  var pos = PerimeterView()
+    ..x = 10
+    ..y = 10;
 
-  print(p.distanceFrom(origin));
-  print(p.area);
-  p.perWalking();
+  pos.area;
+  pos.distanceFrom(Position()
+    ..x = 20
+    ..y = 100);
+
+  final view = LoginPage();
+  view.showLoading();
 }

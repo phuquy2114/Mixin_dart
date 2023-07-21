@@ -1,6 +1,10 @@
 abstract class Person {
-  void perWalking();
 
+  Person();
+
+  void perWalking(); // abstract method
+
+  // method normal
   void outPut() {
     print("Person");
   }
